@@ -1,0 +1,19 @@
+theme: minima
+title: AttentiveDilatedLSTM
+description: Implementation of the M4 Competition winning architecture
+author: fintkz
+baseurl: "/slaweks"
+url: "https://fintkz.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {%- feed_meta -%}
+    {%- seo -%}
+</head>
+
+<body>
+    <div class="site-container">
+        <header class="site-header">
+            <div class="wrapper">
+                <div class="header-content">
+                    <a class="site-title" href="{{ '/' | relative_url }}">
+                        {{ site.title | escape }}
+                    </a>
+                    <!-- <nav class="site-nav">
+                        <a href="{{ '/about/' | relative_url }}" class="nav-link">About</a>
+                        <a href="{{ '/implementation/' | relative_url }}" class="nav-link">Implementation</a>
+                        <a href="https://github.com/yourusername/m-comp" class="nav-link">GitHub</a>
+                    </nav> -->
+                </div>
+            </div>
+        </header>
+
+        <main class="site-content">
+            <div class="wrapper">
+                <article class="page-content">
+                    {{ content }}
+                </article>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="wrapper">
+                <div class="footer-content">
+                    <p class="footer-text">&copy; {{ site.time | date: '%Y' }} {{ site.author }}.
+                        Built with <a href="https://jekyllrb.com">Jekyll</a> &
+                        <a href="https://pages.github.com">GitHub Pages</a>.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

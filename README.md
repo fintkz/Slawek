@@ -1,6 +1,6 @@
 # AttentiveDilatedLSTM
 
-A PyTorch implementation of the winning architecture from the M4 forecasting competition, featuring attention mechanisms and dilated LSTM layers.
+A PyTorch implementation of part of the winning architecture from the M4 forecasting competition, featuring attention mechanisms and dilated LSTM layers.
 
 ## Overview
 
